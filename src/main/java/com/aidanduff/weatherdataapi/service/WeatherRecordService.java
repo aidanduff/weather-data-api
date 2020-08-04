@@ -27,7 +27,7 @@ public class WeatherRecordService {
 	
 	public WeatherRecord addWeatherRecord(WeatherRecord weatherRecord) {
 		System.err.println("called add");
-		return weatherRecordRepository.save(new WeatherRecord(2020, "2", 0, 1.0, 1.0, 1, 1));	
+		return weatherRecordRepository.save(weatherRecord);	
 	}
 
 }
