@@ -11,6 +11,7 @@ public class WeatherRecord {
 	@Id
 	@GeneratedValue
 	private int id;
+
 	private int yearofRecord;
 	private String month;
 	private int ind;
@@ -88,6 +89,14 @@ public class WeatherRecord {
 
 	public void setWd(int wd) {
 		this.wd = wd;
+	}
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	@Override
