@@ -24,14 +24,14 @@ public class WeatherRecordController {
 	@Autowired
 	private CSVReader csvReader;
 	
-	@GetMapping("/read")
-	public ResponseEntity<List<WeatherRecord>> readInData() {
-		try {
-			csvReader.readData();
-		} catch (IOException e) {e.printStackTrace();}
-
-		return ResponseEntity.ok().build();
-	}
+//	@GetMapping("/read")
+//	public ResponseEntity<List<WeatherRecord>> readInData() {
+//		try {
+//			csvReader.readData();
+//		} catch (IOException e) {e.printStackTrace();}
+//
+//		return ResponseEntity.ok().build();
+//	}
 	
 	@GetMapping("/weather")
 	public ResponseEntity<List<WeatherRecord>> getAllRecords() {

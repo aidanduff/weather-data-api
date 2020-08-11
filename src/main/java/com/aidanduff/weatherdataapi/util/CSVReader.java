@@ -4,15 +4,12 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.HashSet;
-import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
 
-import com.aidanduff.weatherdataapi.entity.WeatherRecord;
+import com.aidanduff.weatherdataapi.service.FilesStorageServiceImpl;
 import com.aidanduff.weatherdataapi.service.WeatherRecordService;
 
 @Component
@@ -20,9 +17,12 @@ public class CSVReader {
 	
 	@Autowired
 	private WeatherRecordService weatherRecordService;
+	
+	@Autowired
+	private FilesStorageServiceImpl filesStorageServiceImpl;
 		
-	public void readData() throws IOException {			
-		BufferedReader reader = Files.newBufferedReader( ResourceUtils.getFile("classpath:mly129.csv").toPath());
+	public void readData(File file) throws IOException {		
+		BufferedReader reader = Files.newBufferedReader(file.toPath());
 		
 		reader.lines()
 		.sequential()
