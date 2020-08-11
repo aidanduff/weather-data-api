@@ -7,9 +7,6 @@ import java.nio.file.Files;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.util.ResourceUtils;
-
-import com.aidanduff.weatherdataapi.service.FilesStorageServiceImpl;
 import com.aidanduff.weatherdataapi.service.WeatherRecordService;
 
 @Component
@@ -17,9 +14,6 @@ public class CSVReader {
 	
 	@Autowired
 	private WeatherRecordService weatherRecordService;
-	
-	@Autowired
-	private FilesStorageServiceImpl filesStorageServiceImpl;
 		
 	public void readData(File file) throws IOException {		
 		BufferedReader reader = Files.newBufferedReader(file.toPath());
