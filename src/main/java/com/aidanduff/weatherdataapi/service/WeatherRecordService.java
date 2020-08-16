@@ -28,5 +28,9 @@ public class WeatherRecordService {
 	public WeatherRecord addWeatherRecord(WeatherRecord weatherRecord) {
 		return weatherRecordRepository.save(weatherRecord);	
 	}
+	
+	public void deleteAllRecords() {
+		weatherRecordRepository.deleteAll();	
+	}
 
 }
