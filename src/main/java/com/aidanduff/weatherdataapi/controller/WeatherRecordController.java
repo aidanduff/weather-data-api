@@ -33,6 +33,7 @@ public class WeatherRecordController {
 	@DeleteMapping("/delete")
 	public void deleteAllRecords() {
 		filesStorageServiceImpl.deleteAll();
+		filesStorageServiceImpl.init();
 		weatherRecordService.deleteAllRecords();
 		
 	}

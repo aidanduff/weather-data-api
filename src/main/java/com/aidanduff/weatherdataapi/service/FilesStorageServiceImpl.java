@@ -55,4 +55,5 @@ public class FilesStorageServiceImpl implements FilesStorageService {
 	public void deleteAll() {
 		FileSystemUtils.deleteRecursively(root.toFile());
 	}
+
 }
