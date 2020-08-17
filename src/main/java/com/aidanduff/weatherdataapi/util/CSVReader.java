@@ -18,7 +18,6 @@ public class CSVReader {
 	public void readData(File file) throws IOException {		
 		BufferedReader reader = Files.newBufferedReader(file.toPath());
 		String weatherStationLocation = reader.readLine().substring(14);
-		System.out.println(weatherStationLocation);
 		
 		reader.lines()
 		.sequential()

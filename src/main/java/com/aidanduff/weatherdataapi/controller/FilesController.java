@@ -28,7 +28,6 @@ public class FilesController {
 		String message = "";
 		try {
 			storageService.save(file);
-			System.out.println("fileName: " + file.getOriginalFilename());
 			Resource savedFile = storageService.load(file.getOriginalFilename());
 			csvReader.readData(savedFile.getFile());
 
