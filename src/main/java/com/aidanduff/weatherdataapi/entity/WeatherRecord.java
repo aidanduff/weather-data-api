@@ -12,6 +12,7 @@ public class WeatherRecord {
 	@GeneratedValue
 	private int id;
 
+	private String stationLocation;
 	private int yearofRecord;
 	private String month;
 	private int ind;
@@ -22,6 +23,7 @@ public class WeatherRecord {
 	
 	public WeatherRecord(int year, String month, int indicator, double rain, double gdf, int rd, int wd) {
 		super();
+		this.stationLocation = stationLocation;
 		this.yearofRecord = year;
 		this.month = month;
 		this.ind = indicator;
@@ -33,6 +35,14 @@ public class WeatherRecord {
 	
 	public WeatherRecord() {
 
+	}
+	
+	public String getStationLocation() {
+		return stationLocation;
+	}
+
+	public void setStationLocation(String stationLocation) {
+		this.stationLocation = stationLocation;
 	}
 
 	public int getYear() {

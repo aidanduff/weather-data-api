@@ -17,6 +17,8 @@ public class CSVReader {
 		
 	public void readData(File file) throws IOException {		
 		BufferedReader reader = Files.newBufferedReader(file.toPath());
+		String weatherStationLocation = reader.readLine().substring(14);
+		System.out.println(weatherStationLocation);
 		
 		reader.lines()
 		.sequential()
@@ -26,7 +28,10 @@ public class CSVReader {
 		.map(WeatherRecordBuilder::build)
 		.filter(w -> w.getYear() > 0)
 		.filter(x -> x!=null)
-		.forEach(wr -> weatherRecordService.addWeatherRecord(wr));
+		.forEach(wr -> {
+			wr.setStationLocation(weatherStationLocation);
+			weatherRecordService.addWeatherRecord(wr);
+		});;
 	}
 
 }
