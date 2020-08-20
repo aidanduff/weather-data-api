@@ -68,4 +68,11 @@ public class IntegrationTest {
 	    ResponseEntity<Object> result = restTemplate.exchange("http://localhost:" + port + "/delete", HttpMethod.DELETE, entity, Object.class);
 		assertEquals(200, result.getStatusCodeValue());
 	}
+	
+	@Test
+	public void nothingAddedShouldReturnNoContent() {
+		ResponseEntity<List> result = this.restTemplate.getForEntity("http://localhost:" + port + "/weather", List.class);
+		assertEquals(204, result.getStatusCodeValue());
+		
+	}
 }
