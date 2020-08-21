@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -96,5 +97,14 @@ public class WeatherRecordContollerTest {
 		
 		assertTrue(weatherRecordService.getAllWeatherRecords().isEmpty());
 	}
-
+	
+	@Test
+	public void deleteShouldReturnOk() throws Exception {				
+		this.mockMvc.perform(delete("/delete")
+				.contentType(MediaType.APPLICATION_JSON)
+	            .accept(MediaType.APPLICATION_JSON))
+				.andDo(print())
+                .andExpect(status().isOk());
+	}
+	
 }
