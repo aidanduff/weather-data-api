@@ -1,10 +1,62 @@
 ----------------------------------------------------------------
-Mon Aug 31 19:29:42 BST 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0174-45c8-2d68-00000dd9d190 
-on database directory memory:C:\Users\Admin\git\weather-data-api-local\weather-data-api\7e4d9382-6305-47be-af92-f5a33533761d with class loader org.springframework.boot.loader.LaunchedURLClassLoader@21b8d17c 
-Loaded from jar:file:/C:/Users/Admin/.m2/repository/com/aidanduff/weather-data-api/0.0.1-SNAPSHOT/weather-data-api-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/derby-10.14.2.0.jar!/
+Tue Sep 01 14:13:49 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0174-49cd-5a64-000012f16ab8 
+on database directory memory:C:\Users\Admin\git\weather-data-api-local\weather-data-api\0ed5510f-18d2-4521-bb3e-d421297c100b with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_201-b09
+java.runtime.version=1.8.0_171-b11
+user.dir=C:\Users\Admin\git\weather-data-api-local\weather-data-api
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Sep 01 14:13:53 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance f33d40c7-0174-49cd-5a64-000012f16ab8 
+on database directory memory:C:\Users\Admin\git\weather-data-api-local\weather-data-api\f8d91a16-ddb0-4848-85e4-4c7045db7f5a with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
+user.dir=C:\Users\Admin\git\weather-data-api-local\weather-data-api
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Sep 01 14:13:56 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance f5c44362-0174-49cd-5a64-000012f16ab8 
+on database directory memory:C:\Users\Admin\git\weather-data-api-local\weather-data-api\5644f56c-c66d-4f67-be64-4c10a83fbc34 with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
+user.dir=C:\Users\Admin\git\weather-data-api-local\weather-data-api
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Sep 01 14:13:58 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance 97c3c5fb-0174-49cd-5a64-000012f16ab8 
+on database directory memory:C:\Users\Admin\git\weather-data-api-local\weather-data-api\ad8d0420-1bbc-4c38-a60f-42597a4b9868 with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
+user.dir=C:\Users\Admin\git\weather-data-api-local\weather-data-api
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Sep 01 14:14:00 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance 5c390989-0174-49cd-5a64-000012f16ab8 
+on database directory memory:C:\Users\Admin\git\weather-data-api-local\weather-data-api\780b3a5e-927e-4a7a-a351-2b89e2115da7 with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
 user.dir=C:\Users\Admin\git\weather-data-api-local\weather-data-api
 os.name=Windows 10
 os.arch=amd64
