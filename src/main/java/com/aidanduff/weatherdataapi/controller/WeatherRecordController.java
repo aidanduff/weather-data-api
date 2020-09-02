@@ -14,7 +14,7 @@ import com.aidanduff.weatherdataapi.entity.WeatherRecord;
 import com.aidanduff.weatherdataapi.service.FilesStorageServiceImpl;
 import com.aidanduff.weatherdataapi.service.WeatherRecordService;
 
-@CrossOrigin(origins = { "http://localhost:3000", "http://localhost:4200", "https://rainydays.herokuapp.com/upload" })
+@CrossOrigin(origins = { "http://localhost:3000", "http://localhost:4200", "https://rainydays.herokuapp.com" })
 @RestController
 public class WeatherRecordController {
 

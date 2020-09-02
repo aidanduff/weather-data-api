@@ -16,7 +16,7 @@ import com.aidanduff.weatherdataapi.service.FilesStorageService;
 import com.aidanduff.weatherdataapi.util.CSVReader;
 
 @Controller
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "https://rainydays.herokuapp.com", "https://rainydays.herokuapp.com/upload" })
 public class FilesController {
 	@Autowired
 	FilesStorageService storageService;
